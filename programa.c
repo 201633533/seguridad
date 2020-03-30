@@ -3,6 +3,7 @@
 main(){ 
 printf("TECNOLOGICO DE ESTUDIOS SUPERIORES DE IXTAPALUCA");
 printf("PEREZ BRIONES MARIA VICTORIA");
-printf("1801");       
+printf("1801");
+printf("ILLESCAS ROBLEDO JUAN SEBASTIAN");       
 }
 
