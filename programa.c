@@ -6,6 +6,7 @@ printf("PEREZ BRIONES MARIA VICTORIA");
 printf("1801");
 printf("ILLESCAS ROBLEDO JUAN SEBASTIAN");   
 printf("Con Kali-2019.3");
-printf("Máquina virtual");   
+printf("Máquina Virtual");  
+ 
 }
 
