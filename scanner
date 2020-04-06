@@ -1,0 +1,80 @@
+root@Illescas:~# cd Escritorio
+root@Illescas:~/Escritorio# git clone http://github.com/emanuil/php-reaper.git
+Clonando en 'php-reaper'...
+warning: redirigiendo a https://github.com/emanuil/php-reaper.git/
+remote: Enumerating objects: 779, done.
+remote: Total 779 (delta 0), reused 0 (delta 0), pack-reused 779
+Recibiendo objetos: 100% (779/779), 293.58 KiB | 511.00 KiB/s, listo.
+Resolviendo deltas: 100% (337/337), listo.
+root@Illescas:~/Escritorio# cd php-reaper
+root@Illescas:~/Escritorio/php-reaper# php php-reapr.php -h
+Could not open input file: php-reapr.php
+root@Illescas:~/Escritorio/php-reaper# ls
+phpmd  php-parser  php-reaper.php  README.md  SecurityChecks.php  tests
+root@Illescas:~/Escritorio/php-reaper# php php-reaper.php -h
+
+Usage: php-reaper -d directory -f file
+-d directory: the directory to check
+-f directory: the file to check
+
+root@Illescas:~/Escritorio/php-reaper# php php-reaper.php -d tests/
+
+
+Potential SQL injections in file /root/Escritorio/php-reaper/tests/SecurityChecks/exampleFiles/SQLInTernaryOperator.php
+line: 11
+
+Potential SQL injections in file /root/Escritorio/php-reaper/tests/SecurityChecks/exampleFiles/SQLQueryInTheReturnStatement.php
+line: 11
+
+Potential SQL injections in file /root/Escritorio/php-reaper/tests/SecurityChecks/exampleFiles/SQLInForLoop.php
+line: 14
+
+Potential SQL injections in file /root/Escritorio/php-reaper/tests/SecurityChecks/exampleFiles/SQLInIfElseIfStatement.php
+line: 21
+
+Potential SQL injections in file /root/Escritorio/php-reaper/tests/SecurityChecks/exampleFiles/SQLInIfStatement.php
+line: 16
+
+Potential SQL injections in file /root/Escritorio/php-reaper/tests/SecurityChecks/exampleFiles/SQLInFunctionWithinIfStatement.php
+line: 9
+
+Potential SQL injections in file /root/Escritorio/php-reaper/tests/SecurityChecks/exampleFiles/IgnoreSQLQueryThenInterpolationIsDoneWithAConstant.php
+line: 26
+
+Potential SQL injections in file /root/Escritorio/php-reaper/tests/SecurityChecks/exampleFiles/StringInterpolationWithBracesInArgument.php
+line: 10
+line: 15
+
+Potential SQL injections in file /root/Escritorio/php-reaper/tests/SecurityChecks/exampleFiles/SQLInElseIfStatement.php
+line: 19
+
+Potential SQL injections in file /root/Escritorio/php-reaper/tests/SecurityChecks/exampleFiles/SQLInSwitchStatement.php
+line: 12
+
+Potential SQL injections in file /root/Escritorio/php-reaper/tests/SecurityChecks/exampleFiles/StringInterpolationWithoutBracesInArgument.php
+line: 7
+
+Potential SQL injections in file /root/Escritorio/php-reaper/tests/SecurityChecks/exampleFiles/SQLInIfCondition.php
+line: 9
+
+Potential SQL injections in file /root/Escritorio/php-reaper/tests/SecurityChecks/exampleFiles/SQLQueryNotInAClass.php
+line: 6
+
+Potential SQL injections in file /root/Escritorio/php-reaper/tests/SecurityChecks/exampleFiles/SingleConcatenation.php
+line: 10
+
+Potential SQL injections in file /root/Escritorio/php-reaper/tests/SecurityChecks/exampleFiles/ConcatinatedVariable.php
+line: 12
+
+Potential SQL injections in file /root/Escritorio/php-reaper/tests/SecurityChecks/exampleFiles/StringConcatenationInArgument.php
+line: 9
+line: 11
+
+Potential SQL injections in file /root/Escritorio/php-reaper/tests/SecurityChecks/exampleFiles/AdditionToSQLStatementInIfStatement.php
+line: 17
+
+Potential SQL injections in file /root/Escritorio/php-reaper/tests/SecurityChecks/exampleFiles/SQLInElseStatement.php
+line: 18
+
+root@Illescas:~/Escritorio/php-reaper# cd log
+
